@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debate AI | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Debate AI</div>
+    <nav>
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('trynow')}}">Try Now</a></li>
+        <li><a href="{{url_for('chatbot')}}">Chatbot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Hero -->
+  <section class="home-hero">
+    <div class="hero-content">
+      <h1>Welcome to Debate AI</h1>
+      <p>Experience debates in the style of a Lawyer, Interviewer, Professor, and more!</p>
+      <a href="{{url_for('trynow')}}" class="btn">Start Debating</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Debate AI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
