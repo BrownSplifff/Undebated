@@ -1,6 +1,6 @@
 # Debate AI
 
-**Debate AI** is an interactive platform that uses the **OpenAI API** to simulate structured debates. It generates arguments and counterpoints in real time, helping users explore multiple perspectives, improve critical thinking, and engage in dynamic discussions on a wide range of topics.
+**Debate AI** is an interactive platform that uses the **GROQ API** to simulate structured debates. It generates arguments and counterpoints in real time, helping users explore multiple perspectives, improve critical thinking, and engage in dynamic discussions on a wide range of topics.
 
 ## Features
 
@@ -22,9 +22,9 @@
   env\Scripts\activate      # Windows
 3. install dependencies
   pip install -r requirements.txt
-4. Set up your OpenAI API key in your environment:
-  export OPENAI_API_KEY="your_api_key"    # Linux/Mac
-  setx OPENAI_API_KEY "your_api_key"      # Windows
+4. Set up your Gorq key in your environment:
+  export GROQ_KEY="your_api_key"    # Linux/Mac
+  setx GROQ_KEY "your_api_key"      # Windows
 
 USAGE
 python main.py
