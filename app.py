@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 from flask import render_template
-from openai import OpenAI
+from groq import Groq
 import os
 
 app = Flask(__name__)
-client = OpenAI(api_key=os.getenv("OPEN_AI_KEY_2"))
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 @app.route("/")
 def home():
@@ -24,9 +24,9 @@ def get_response():
 
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="llama-3.1-8b-instant",
             messages=[
-                {"role": "system", "content": "you are a master debater, argue with the user intelligently and logically"},
+                {"role": "system", "content": "you are a master debater, argue with the user intelligently and logically. use 50-120 words per argument."},
                 {"role":"user", "content": user_message}
             ]
         )
