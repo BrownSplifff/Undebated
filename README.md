@@ -26,9 +26,17 @@
   export GROQ_KEY="your_api_key"    # Linux/Mac
   setx GROQ_KEY "your_api_key"      # Windows
 
+  
 USAGE
 python main.py
 
 Then enter a topic and engage in a debate with the AI!
+
+
+##DEMO PICTURES
+
+![09 10 2025_18 35 50_REC](https://github.com/user-attachments/assets/40068622-55bb-4211-9622-15cf38b0131a)
+![09 10 2025_18 37 25_REC](https://github.com/user-attachments/assets/846e5b7a-fe82-4f5e-aeb3-a95805ccca3a)
+
 
 
